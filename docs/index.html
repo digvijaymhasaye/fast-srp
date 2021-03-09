@@ -50,7 +50,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>Project fast-srp-hap</h1>
+			<h1>fast-srp-hap</h1>
 		</div>
 	</div>
 </header>
@@ -67,7 +67,7 @@
 				<a href="https://coveralls.io/github/homebridge/fast-srp?branch=master"><img src="https://coveralls.io/repos/github/homebridge/fast-srp/badge.svg?branch=master" alt="Coverage Status"></a></p>
 				<p>Is a pure <a href="https://nodejs.org/">NodeJS</a> implementation of the <a href="http://srp.stanford.edu/">SRP6a protocol</a>.</p>
 				<p>It&#39;s a derived work of <a href="http://jedparsons.com/">Jed Parson</a>&#39;s <a href="https://github.com/jedp/node-srp">node-srp</a> and <a href="http://www-cs-students.stanford.edu/~tjw/">Tom Wu</a>&#39;s <a href="http://www-cs-students.stanford.edu/~tjw/jsbn/">jsbn</a>.</p>
-				<p>Full documentation can be found <a href="https://developers.homebridge.io/fast-srp/globals.html">here</a>.</p>
+				<p>Full documentation can be found <a href="https://developers.homebridge.io/fast-srp/modules.html">here</a>.</p>
 				<a href="#creating-the-verifier" id="creating-the-verifier" style="color: inherit; text-decoration: none;">
 					<h2>Creating the Verifier</h2>
 				</a>
@@ -82,7 +82,7 @@
 <span style="color: #008000"> */</span>
 <span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">srp6a_create_user</span><span style="color: #000000">(</span><span style="color: #001080">I</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #001080">P</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">) {</span>
 <span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">salt</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #795E26">genKey</span><span style="color: #000000">(</span><span style="color: #098658">32</span><span style="color: #000000">);</span>
-
+<span style="color: #000000">  </span>
 <span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #008000">// The salt is required for authenticating the user later</span>
 <span style="color: #000000">    </span><span style="color: #001080">salt</span><span style="color: #000000">,</span>
@@ -108,7 +108,7 @@
 <span style="color: #000000">    </span><span style="color: #008000">// If we have the plaintext password</span>
 <span style="color: #000000">    </span><span style="color: #001080">salt:</span><span style="color: #000000"> </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #795E26">genKey</span><span style="color: #000000">(</span><span style="color: #098658">32</span><span style="color: #000000">),</span>
 <span style="color: #000000">    </span><span style="color: #001080">password:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;password&#039;</span><span style="color: #000000">, </span><span style="color: #008000">// Or a Buffer</span>
-
+<span style="color: #000000">    </span>
 <span style="color: #000000">    </span><span style="color: #008000">// If we have a saved verifier</span>
 <span style="color: #000000">    </span><span style="color: #001080">salt:</span><span style="color: #000000"> </span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;...&#039;</span><span style="color: #000000">),</span>
 <span style="color: #000000">    </span><span style="color: #001080">verifier:</span><span style="color: #000000"> </span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;...&#039;</span><span style="color: #000000">),</span>
@@ -117,7 +117,7 @@
 <span style="color: #000000">  </span><span style="color: #008000">// Generate a secret key</span>
 <span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">secret</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #795E26">genKey</span><span style="color: #000000">(</span><span style="color: #098658">32</span><span style="color: #000000">);</span>
 
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">server</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">SrpServer</span><span style="color: #000000">(</span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #001080">params</span><span style="color: #000000">[</span><span style="color: #098658">3076</span><span style="color: #000000">], </span><span style="color: #001080">user</span><span style="color: #000000">, </span><span style="color: #001080">secret</span><span style="color: #000000">); </span><span style="color: #008000">// For Apple SRP use params.hap</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">server</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">SrpServer</span><span style="color: #000000">(</span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #001080">params</span><span style="color: #000000">[</span><span style="color: #098658">3076</span><span style="color: #000000">], </span><span style="color: #001080">user</span><span style="color: #000000">, </span><span style="color: #001080">secret</span><span style="color: #000000">); </span><span style="color: #008000">// For Apple SRP use params.hap</span>
 
 <span style="color: #000000">  </span><span style="color: #008000">// ...</span>
 <span style="color: #000000">})();</span>
