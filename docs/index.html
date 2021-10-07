@@ -1,191 +1,24 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>fast-srp-hap</title>
-	<meta name="description" content="Documentation for fast-srp-hap">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">fast-srp-hap</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<h1>fast-srp-hap</h1>
-		</div>
-	</div>
-</header>
-<div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#fast-srp-hap" id="fast-srp-hap" style="color: inherit; text-decoration: none;">
-					<h1>fast-srp-hap</h1>
-				</a>
-				<p><img src="https://badgen.net/npm/v/fast-srp-hap" alt="NPM-Version">
-					<img src="https://badgen.net/npm/dt/fast-srp-hap" alt="NPM-Downloads">
-					<img src="https://github.com/homebridge/fast-srp/workflows/Node-CI/badge.svg" alt="Node-CI">
-				<a href="https://coveralls.io/github/homebridge/fast-srp?branch=master"><img src="https://coveralls.io/repos/github/homebridge/fast-srp/badge.svg?branch=master" alt="Coverage Status"></a></p>
-				<p>Is a pure <a href="https://nodejs.org/">NodeJS</a> implementation of the <a href="http://srp.stanford.edu/">SRP6a protocol</a>.</p>
-				<p>It&#39;s a derived work of <a href="http://jedparsons.com/">Jed Parson</a>&#39;s <a href="https://github.com/jedp/node-srp">node-srp</a> and <a href="http://www-cs-students.stanford.edu/~tjw/">Tom Wu</a>&#39;s <a href="http://www-cs-students.stanford.edu/~tjw/jsbn/">jsbn</a>.</p>
-				<p>Full documentation can be found <a href="https://developers.homebridge.io/fast-srp/modules.html">here</a>.</p>
-				<a href="#creating-the-verifier" id="creating-the-verifier" style="color: inherit; text-decoration: none;">
-					<h2>Creating the Verifier</h2>
-				</a>
-				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">SRP</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;fast-srp-hap&#039;</span><span style="color: #000000">;</span>
+<!DOCTYPE html><html class="default no-js"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>fast-srp-hap</title><meta name="description" content="Documentation for fast-srp-hap"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">fast-srp-hap</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>fast-srp-hap</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#fast-srp-hap" id="fast-srp-hap" style="color: inherit; text-decoration: none;">
+  <h1>fast-srp-hap</h1>
+</a>
+<p><img src="https://badgen.net/npm/v/fast-srp-hap" alt="NPM-Version">
+<img src="https://badgen.net/npm/dt/fast-srp-hap" alt="NPM-Downloads">
+<img src="https://github.com/homebridge/fast-srp/workflows/Node-CI/badge.svg" alt="Node-CI">
+<a href="https://coveralls.io/github/homebridge/fast-srp?branch=master"><img src="https://coveralls.io/repos/github/homebridge/fast-srp/badge.svg?branch=master" alt="Coverage Status"></a></p>
+<p>Is a pure <a href="https://nodejs.org/">NodeJS</a> implementation of the <a href="http://srp.stanford.edu/">SRP6a protocol</a>.</p>
+<p>It&#39;s a derived work of <a href="http://jedparsons.com/">Jed Parson</a>&#39;s <a href="https://github.com/jedp/node-srp">node-srp</a> and <a href="http://www-cs-students.stanford.edu/~tjw/">Tom Wu</a>&#39;s <a href="http://www-cs-students.stanford.edu/~tjw/jsbn/">jsbn</a>.</p>
+<p>Full documentation can be found <a href="https://developers.homebridge.io/fast-srp/modules.html">here</a>.</p>
 
-<span style="color: #008000">/**</span>
-<span style="color: #008000"> * Computes the verifier of a user. Only needed to add the user to the auth system.</span>
-<span style="color: #008000"> *</span>
-<span style="color: #008000"> * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #267F99">{string}</span><span style="color: #008000"> </span><span style="color: #001080">I</span><span style="color: #008000"> Username to compute verifier</span>
-<span style="color: #008000"> * </span><span style="color: #0000FF">@param</span><span style="color: #008000"> </span><span style="color: #267F99">{string}</span><span style="color: #008000"> </span><span style="color: #001080">P</span><span style="color: #008000"> Password</span>
-<span style="color: #008000"> * </span><span style="color: #0000FF">@return</span><span style="color: #008000"> </span><span style="color: #267F99">{Promise&lt;{salt: Buffer, verifier: Buffer}&gt;}</span>
-<span style="color: #008000"> */</span>
-<span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">srp6a_create_user</span><span style="color: #000000">(</span><span style="color: #001080">I</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #001080">P</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">) {</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">salt</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #795E26">genKey</span><span style="color: #000000">(</span><span style="color: #098658">32</span><span style="color: #000000">);</span>
-<span style="color: #000000">  </span>
-<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> {</span>
-<span style="color: #000000">    </span><span style="color: #008000">// The salt is required for authenticating the user later</span>
-<span style="color: #000000">    </span><span style="color: #001080">salt</span><span style="color: #000000">,</span>
-<span style="color: #000000">    </span><span style="color: #001080">verifier:</span><span style="color: #000000"> </span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #795E26">computeVerifier</span><span style="color: #000000">(</span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #001080">params</span><span style="color: #000000">[</span><span style="color: #098658">4096</span><span style="color: #000000">], </span><span style="color: #001080">salt</span><span style="color: #000000">, </span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #0070C1">I</span><span style="color: #000000">), </span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #0070C1">P</span><span style="color: #000000">)),</span>
-<span style="color: #000000">  };</span>
-<span style="color: #000000">}</span>
-
-<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">srp6a_create_user</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Zarmack Tanen&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;*****&#039;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(({</span><span style="color: #001080">salt</span><span style="color: #000000">, </span><span style="color: #001080">verifier</span><span style="color: #000000">}) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;SRP6a verifier and salt of Zarmack Tanen user is %s and %s&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">    </span><span style="color: #001080">verifier</span><span style="color: #000000">.</span><span style="color: #795E26">toString</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;hex&#039;</span><span style="color: #000000">), </span><span style="color: #001080">salt</span><span style="color: #000000">.</span><span style="color: #795E26">toString</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;hex&#039;</span><span style="color: #000000">));</span>
-<span style="color: #000000">});</span>
+<a href="#creating-the-verifier" id="creating-the-verifier" style="color: inherit; text-decoration: none;">
+  <h2>Creating the Verifier</h2>
+</a>
+<pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">SRP</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;fast-srp-hap&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">/**</span><br/><span class="hl-4"> * Computes the verifier of a user. Only needed to add the user to the auth system.</span><br/><span class="hl-4"> *</span><br/><span class="hl-4"> * </span><span class="hl-5">@param</span><span class="hl-4"> </span><span class="hl-6">{string}</span><span class="hl-4"> </span><span class="hl-2">I</span><span class="hl-4"> Username to compute verifier</span><br/><span class="hl-4"> * </span><span class="hl-5">@param</span><span class="hl-4"> </span><span class="hl-6">{string}</span><span class="hl-4"> </span><span class="hl-2">P</span><span class="hl-4"> Password</span><br/><span class="hl-4"> * </span><span class="hl-5">@return</span><span class="hl-4"> </span><span class="hl-6">{Promise&lt;{salt: Buffer, verifier: Buffer}&gt;}</span><br/><span class="hl-4"> */</span><br/><span class="hl-5">async</span><span class="hl-1"> </span><span class="hl-5">function</span><span class="hl-1"> </span><span class="hl-7">srp6a_create_user</span><span class="hl-1">(</span><span class="hl-2">I</span><span class="hl-1">: </span><span class="hl-6">string</span><span class="hl-1">, </span><span class="hl-2">P</span><span class="hl-1">: </span><span class="hl-6">string</span><span class="hl-1">) {</span><br/><span class="hl-1">  </span><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-8">salt</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-8">SRP</span><span class="hl-1">.</span><span class="hl-7">genKey</span><span class="hl-1">(</span><span class="hl-9">32</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><br/><span class="hl-1">  </span><span class="hl-0">return</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-4">// The salt is required for authenticating the user later</span><br/><span class="hl-1">    </span><span class="hl-2">salt</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-2">verifier:</span><span class="hl-1"> </span><span class="hl-8">SRP</span><span class="hl-1">.</span><span class="hl-7">computeVerifier</span><span class="hl-1">(</span><span class="hl-8">SRP</span><span class="hl-1">.</span><span class="hl-2">params</span><span class="hl-1">[</span><span class="hl-9">4096</span><span class="hl-1">], </span><span class="hl-2">salt</span><span class="hl-1">, </span><span class="hl-2">Buffer</span><span class="hl-1">.</span><span class="hl-7">from</span><span class="hl-1">(</span><span class="hl-8">I</span><span class="hl-1">), </span><span class="hl-2">Buffer</span><span class="hl-1">.</span><span class="hl-7">from</span><span class="hl-1">(</span><span class="hl-8">P</span><span class="hl-1">)),</span><br/><span class="hl-1">  };</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-7">srp6a_create_user</span><span class="hl-1">(</span><span class="hl-3">&#39;Zarmack Tanen&#39;</span><span class="hl-1">, </span><span class="hl-3">&#39;*****&#39;</span><span class="hl-1">).</span><span class="hl-7">then</span><span class="hl-1">(({</span><span class="hl-2">salt</span><span class="hl-1">, </span><span class="hl-2">verifier</span><span class="hl-1">}) </span><span class="hl-5">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-7">log</span><span class="hl-1">(</span><span class="hl-3">&#39;SRP6a verifier and salt of Zarmack Tanen user is %s and %s&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-2">verifier</span><span class="hl-1">.</span><span class="hl-7">toString</span><span class="hl-1">(</span><span class="hl-3">&#39;hex&#39;</span><span class="hl-1">), </span><span class="hl-2">salt</span><span class="hl-1">.</span><span class="hl-7">toString</span><span class="hl-1">(</span><span class="hl-3">&#39;hex&#39;</span><span class="hl-1">));</span><br/><span class="hl-1">});</span>
 </code></pre>
-				<a href="#server" id="server" style="color: inherit; text-decoration: none;">
-					<h2>Server</h2>
-				</a>
-				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">SRP</span><span style="color: #000000">, </span><span style="color: #001080">SrpServer</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;fast-srp-hap&#039;</span><span style="color: #000000">;</span>
 
-<span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #008000">// Get the user details from somewhere</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">user</span><span style="color: #000000"> = {</span>
-<span style="color: #000000">    </span><span style="color: #001080">username:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;username&#039;</span><span style="color: #000000">, </span><span style="color: #008000">// Or a Buffer</span>
-
-<span style="color: #000000">    </span><span style="color: #008000">// If we have the plaintext password</span>
-<span style="color: #000000">    </span><span style="color: #001080">salt:</span><span style="color: #000000"> </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #795E26">genKey</span><span style="color: #000000">(</span><span style="color: #098658">32</span><span style="color: #000000">),</span>
-<span style="color: #000000">    </span><span style="color: #001080">password:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;password&#039;</span><span style="color: #000000">, </span><span style="color: #008000">// Or a Buffer</span>
-<span style="color: #000000">    </span>
-<span style="color: #000000">    </span><span style="color: #008000">// If we have a saved verifier</span>
-<span style="color: #000000">    </span><span style="color: #001080">salt:</span><span style="color: #000000"> </span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;...&#039;</span><span style="color: #000000">),</span>
-<span style="color: #000000">    </span><span style="color: #001080">verifier:</span><span style="color: #000000"> </span><span style="color: #001080">Buffer</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;...&#039;</span><span style="color: #000000">),</span>
-<span style="color: #000000">  };</span>
-
-<span style="color: #000000">  </span><span style="color: #008000">// Generate a secret key</span>
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">secret</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #795E26">genKey</span><span style="color: #000000">(</span><span style="color: #098658">32</span><span style="color: #000000">);</span>
-
-<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">server</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">SrpServer</span><span style="color: #000000">(</span><span style="color: #0070C1">SRP</span><span style="color: #000000">.</span><span style="color: #001080">params</span><span style="color: #000000">[</span><span style="color: #098658">3076</span><span style="color: #000000">], </span><span style="color: #001080">user</span><span style="color: #000000">, </span><span style="color: #001080">secret</span><span style="color: #000000">); </span><span style="color: #008000">// For Apple SRP use params.hap</span>
-
-<span style="color: #000000">  </span><span style="color: #008000">// ...</span>
-<span style="color: #000000">})();</span>
+<a href="#server" id="server" style="color: inherit; text-decoration: none;">
+  <h2>Server</h2>
+</a>
+<pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> {</span><span class="hl-2">SRP</span><span class="hl-1">, </span><span class="hl-2">SrpServer</span><span class="hl-1">} </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;fast-srp-hap&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-1">(</span><span class="hl-5">async</span><span class="hl-1"> () </span><span class="hl-5">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-4">// Get the user details from somewhere</span><br/><span class="hl-1">  </span><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-8">user</span><span class="hl-1"> = {</span><br/><span class="hl-1">    </span><span class="hl-2">username:</span><span class="hl-1"> </span><span class="hl-3">&#39;username&#39;</span><span class="hl-1">, </span><span class="hl-4">// Or a Buffer</span><br/><br/><span class="hl-1">    </span><span class="hl-4">// If we have the plaintext password</span><br/><span class="hl-1">    </span><span class="hl-2">salt:</span><span class="hl-1"> </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-8">SRP</span><span class="hl-1">.</span><span class="hl-7">genKey</span><span class="hl-1">(</span><span class="hl-9">32</span><span class="hl-1">),</span><br/><span class="hl-1">    </span><span class="hl-2">password:</span><span class="hl-1"> </span><span class="hl-3">&#39;password&#39;</span><span class="hl-1">, </span><span class="hl-4">// Or a Buffer</span><br/><span class="hl-1">    </span><br/><span class="hl-1">    </span><span class="hl-4">// If we have a saved verifier</span><br/><span class="hl-1">    </span><span class="hl-2">salt:</span><span class="hl-1"> </span><span class="hl-2">Buffer</span><span class="hl-1">.</span><span class="hl-7">from</span><span class="hl-1">(</span><span class="hl-3">&#39;...&#39;</span><span class="hl-1">),</span><br/><span class="hl-1">    </span><span class="hl-2">verifier:</span><span class="hl-1"> </span><span class="hl-2">Buffer</span><span class="hl-1">.</span><span class="hl-7">from</span><span class="hl-1">(</span><span class="hl-3">&#39;...&#39;</span><span class="hl-1">),</span><br/><span class="hl-1">  };</span><br/><br/><span class="hl-1">  </span><span class="hl-4">// Generate a secret key</span><br/><span class="hl-1">  </span><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-8">secret</span><span class="hl-1"> = </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-8">SRP</span><span class="hl-1">.</span><span class="hl-7">genKey</span><span class="hl-1">(</span><span class="hl-9">32</span><span class="hl-1">);</span><br/><br/><span class="hl-1">  </span><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-8">server</span><span class="hl-1"> = </span><span class="hl-5">new</span><span class="hl-1"> </span><span class="hl-7">SrpServer</span><span class="hl-1">(</span><span class="hl-8">SRP</span><span class="hl-1">.</span><span class="hl-2">params</span><span class="hl-1">[</span><span class="hl-9">3076</span><span class="hl-1">], </span><span class="hl-2">user</span><span class="hl-1">, </span><span class="hl-2">secret</span><span class="hl-1">); </span><span class="hl-4">// For Apple SRP use params.hap</span><br/><br/><span class="hl-1">  </span><span class="hl-4">// ...</span><br/><span class="hl-1">})();</span>
 </code></pre>
-			</div>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-					<li class=" tsd-kind-class">
-						<a href="classes/srp.html" class="tsd-kind-icon">SRP</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/srpclient.html" class="tsd-kind-icon">Srp<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/srpserver.html" class="tsd-kind-icon">Srp<wbr>Server</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/baseidentity.html" class="tsd-kind-icon">Base<wbr>Identity</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/srpparams.html" class="tsd-kind-icon">Srp<wbr>Params</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#genkeycallback" class="tsd-kind-icon">Gen<wbr>Key<wbr>Callback</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#identity" class="tsd-kind-icon">Identity</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#passwordidentity" class="tsd-kind-icon">Password<wbr>Identity</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#verifieridentity" class="tsd-kind-icon">Verifier<wbr>Identity</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer>
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-		</div>
-	</div>
-</footer>
-<div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-class"><a href="classes/SRP.html" class="tsd-kind-icon">SRP</a></li><li class="tsd-kind-class"><a href="classes/SrpClient.html" class="tsd-kind-icon">Srp<wbr/>Client</a></li><li class="tsd-kind-class"><a href="classes/SrpServer.html" class="tsd-kind-icon">Srp<wbr/>Server</a></li><li class="tsd-kind-interface"><a href="interfaces/BaseIdentity.html" class="tsd-kind-icon">Base<wbr/>Identity</a></li><li class="tsd-kind-interface"><a href="interfaces/SrpParams.html" class="tsd-kind-icon">Srp<wbr/>Params</a></li><li class="tsd-kind-type-alias"><a href="modules.html#GenKeyCallback" class="tsd-kind-icon">Gen<wbr/>Key<wbr/>Callback</a></li><li class="tsd-kind-type-alias"><a href="modules.html#Identity" class="tsd-kind-icon">Identity</a></li><li class="tsd-kind-type-alias"><a href="modules.html#PasswordIdentity" class="tsd-kind-icon">Password<wbr/>Identity</a></li><li class="tsd-kind-type-alias"><a href="modules.html#VerifierIdentity" class="tsd-kind-icon">Verifier<wbr/>Identity</a></li></ul></nav></div></div></div><footer class=""><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li><li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li><li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="overlay"></div><script src="assets/main.js"></script></body></html>
