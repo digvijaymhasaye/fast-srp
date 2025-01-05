@@ -336,7 +336,7 @@ function getM1(params: SrpParams, u_buf: Buffer, s_buf: Buffer, A_buf: Buffer, B
     const hU = crypto.createHash(params.hash).update(u_buf).digest();
 
     return crypto.createHash(params.hash)
-      .update(hN).update(hU).update(s_buf)
+      // .update(hN).update(hU).update(s_buf)
       .update(A_buf).update(B_buf!).update(K_buf!)
       .digest();
   } else {
